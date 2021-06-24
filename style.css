@@ -1,0 +1,494 @@
+ body
+{
+    font-family: Calibri;
+    scroll-behavior: smooth;
+    transition: 250ms ease-in-out;
+    padding-left: 5px;
+    background-size: cover;
+    background-color: var(--couleurJaune);
+
+}
+:root
+{
+   --couleurNuit: black;
+   --couleurRouge:#BE0F0F;
+    --couleurBleu:#326D9A;
+    --couleurBleuB:#0A1E35;
+    --couleurNight:#030D26;
+    --couleurOrange:orange;
+    --couleurBlanc:#FFF;
+    --couleurJaune:#EF9705;
+    --couleurJauneB:#D69200;
+}
+.marquePage
+{
+    position:fixed;
+    transform: rotate(90deg);
+    background-color: var(--couleurBleu);
+    border-radius: 10px;
+    z-index:60;
+    width: 90px;
+    height: 40px;
+    margin-top: 450px;
+    margin-left: -45px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    box-shadow:0px 0px 3px #fff;
+}
+.sidenav
+{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:50;
+    top:0;
+    left:0;
+    background-color: var(--couleurBleuB);
+    overflow-x: hidden;
+    padding-top:40px;
+    transition:0.5s;
+}
+.sidenav a
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration:none;
+    font-size:23px;
+    color: #818181;
+    font-weight: bold;
+    display:block;
+    transition:0.3s;
+    font-family: Calibri;
+}
+.sidenav:hover
+{
+   color:#f1f1f1; 
+}
+.sidenav .closebtn
+{
+    position:absolute;
+    top: 0;
+    right:25px;
+    font-size:36px;
+    margin-left: 50px;
+}
+@media screen and (max-height:450px)
+{
+    .sidenav{padding-top:15px;}
+    .sidenav a{font-size:18px;}
+}
+
+#open:hover
+{
+    transform: rotate(5deg);
+}
+#SwitchMode
+{
+    color:black;
+}
+button
+{
+    background-color: var(--couleurBleu);
+    border-bottom-color: var(--couleurBleuB);
+    border-color: var(--couleurBleuB);
+    border-radius: 20px;
+}
+button:hover
+{
+    background-color: var(--couleurBleuB);
+}
+.header
+{
+                    
+    grid-area: header;
+    font-family: Calibri;
+    font-size: 50px;
+    color: var(--couleurRouge);
+    font-weight: bold;
+    text-align: center;
+    z-index: 40;
+    background-color: var(--couleurBleuB);
+}
+.bar
+{
+    grid-area: advert;
+    width: 800px;
+    z-index: 30; 
+    background-color: var(--couleurJaune) ;
+}       
+.description
+{
+    grid-area:advert1;
+    background-color: var(--couleurJaune) ;
+}
+.LOCATION
+{
+    grid-area:advert2;
+    background-color: var(--couleurJaune) ;
+}
+.chambre
+{
+    grid-area:advert3;
+    background-color: var(--couleurJaune) ;
+}
+.footer
+{
+    background-color: var(--couleurBleuB);
+    grid-area: footer;
+}
+.item7
+{
+    grid-area: content;
+    background-color: var(--couleurJaune) ;
+}
+.resto
+{
+    grid-area:advert4;
+    background-color: var(--couleurJaune) ;
+}
+
+@media(min-width: 600px)
+{
+          .container
+    {
+    font-size: 20px;
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 60% 40% ;
+    grid-template-rows: 59px 60px 1000px 850px 750px  800px 100px;
+    grid-template-areas: 
+        "header header"
+        "advert content "
+        "advert1 content "
+        "advert2 content "
+        "advert3 content "
+        "advert4 content "
+        "footer footer";
+        }       
+}
+  @media(max-width: 200px)
+{
+          .container
+    {
+    font-size: 5px;
+    height: 500px;
+    width: 50px;
+    background-color: var(--couleurJaune);
+    display: grid;
+    grid-template-columns: 50px ;
+    grid-template-rows: 59px 60px 1000px 850px 750px  800px 800px 100px;
+    grid-template-areas: 
+        "header"
+        "advert"
+        "advert1"
+        "advert2"
+        "advert3"
+        "advert4"
+        "content"
+        "footer ";
+        }       
+}  
+        
+.menu
+{
+  margin-right:1250px;
+  margin-top: -65px;
+}
+.abonnement
+{
+    margin-left: 1200px;
+    margin-top: -70px;
+}
+
+ul li
+{
+    list-style: none;
+    display:inline-block;
+    font-family: Cambria;
+    font-size:18px;
+    color:black;
+    margin-left: 30px;
+}
+ul li:hover
+{
+    transform: translateY(-1px);
+    color:var(--couleurRouge);
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+.ul .li
+{
+    list-style: none;
+    font-family: Cambria;
+    font-size:15px;
+    color:black;
+}
+.box, .box1
+{
+    border: 0.3px solid #000000;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.hotel
+{
+   border-radius: 20px;
+    margin-left:10px; 
+    height: 500px;
+    width:750px;
+    position: absolute;
+    box-shadow: 0px 0px 5px #eee;
+}
+.image
+{
+    background-image: url(images/ibisphotoshop.jpg);
+    position:absolute;
+    z-index: 20;
+    box-shadow: 0px 0px 5px #eee;
+}
+.info
+{
+    background-color:#0A294B;
+    margin-top: 440px;
+    border-radius: 20px;
+}
+td
+{
+    width:200px;
+
+}
+.place
+{
+   height:60px;
+}
+.iconLoc
+{
+    float:left;
+    position: auto;
+    margin-top: 3px;
+}
+
+#Loc
+{
+    font-family: Cambria;
+    font-size: 30px;
+    margin-top:10px;
+    margin-left: 50px;
+    color:var(--couleurRouge);
+}
+#Loc1
+{
+    font-size:15px;
+    color:black;
+    font-weight: bold;
+}
+.Lieu
+{
+    font-weight: bold;
+    font-size:30px;
+    color:#154360;
+    font-family: Cambria;
+}
+.Lieu:hover
+{
+    transform:translateY(5px);
+}
+.mot
+{
+    margin-top:550px;
+}
+.p
+{
+    font-size: 15px;
+    margin-top: -20px;
+    font-family: Calibri;
+}
+.image1
+{
+    margin-left: 30px;
+    height:500px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #eee;
+}
+.mapelement
+{
+  font-weight: bold;
+    color:#154360;
+    font-family: sans-serif;
+}
+.mapelement2
+{
+    font-size:15px;
+
+}
+.warpper
+{
+    background-color: var(--couleurJaune) ;
+}
+
+.block
+{
+    width:300px;
+    height: 500px;
+    background-size: cover;
+    color:black;
+    position: absolute;
+    border: 3px solid white;
+    box-shadow: 0px 0px 5px #FFF;
+}
+.block1
+{
+    width:300px;
+    height: 500px;
+    background-size: cover;
+    color:black;
+    position: absolute;
+    border: 3px solid white;
+    margin-left: 400px;
+     box-shadow: 0px 0px 5px #FFF;
+}
+.block2
+{
+    width:300px;
+    height: 500px;
+    background-size: cover;
+    color:black;
+    position: absolute;
+    border: 3px solid white;
+    margin-left: 800px;
+    box-shadow: 0px 0px 5px #FFF;
+}
+
+.block1:hover ,.block2:hover, .block:hover
+{
+    transform: translateX(4px);
+}
+.item1
+{
+    background-color: #ECE7D5;
+    width:300px;
+    height: 100px;
+    margin-top:400px;
+    font-family: calibri;
+    font-size: 15px;
+}
+.q
+{
+   background-image: url(images/hambreBleu.jpg); 
+}
+.r
+{
+    background-image: url(images/vin.jpg);
+}
+.s
+{
+    background-image: url(images/chambre.jpg);
+}
+.food
+{
+    background-size: cover;
+    width:500px;
+    height: 500px;
+    margin-left: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #eee;
+}
+.imageSakafo
+{
+    background-image: url(images/viande.jpg);
+  
+}
+span
+{
+    font-size: 18px;
+}
+.iconLoc:hover
+{
+    transform: rotate(20deg);
+}
+#nbPers
+{
+display:none;
+width:250px;
+}
+   
+
+.dark
+{
+  
+    background-color: var(--couleurBleuB);
+}
+.dark div
+{
+    color:white;
+    background-color: var(--couleurBleuB);
+}
+.dark .Lieu
+{
+    color: var(--couleurOrange);
+}
+.dark .bar
+{
+    color:white;
+    background-color:var(--couleurBleuB) ;
+}
+.dark #Loc
+{
+    color:var(--couleurRouge);
+    background-color: var(--couleurBleuB);
+}
+.dark #Loc1
+{
+    color:white;
+    background-color: var(--couleurBleuB);
+}
+.dark li
+{
+    color:white;
+    background-color: var(--couleurBleuB);
+}
+.dark .header, .dark .abonnement, .dark .menu
+{
+    color: var(--couleurRouge);
+    background-color: var(--couleurNight);
+}
+
+.dark .footer
+{
+    background-color: var(--couleurNight);
+}
+.dark .box
+{
+     border: 0.3px solid #FFF;
+
+}
+.dark .box1
+{
+     border: 0.3px solid #FFF;
+
+}
+.dark .li
+{
+    color:var(--couleurBlanc);
+}
+.dark .image
+{
+    background-image: url(images/ibis2.jpg);
+    position:absolute;
+    z-index: 20;
+    box-shadow: 0px 0px 5px #eee;
+}
+.dark .imageSakafo
+{
+    background-image: url(images/hena.jpg);
+  
+}
+.dark .marquePage
+{
+    background-color: var(--couleurNight);
+}
